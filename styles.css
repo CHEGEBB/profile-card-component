@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+body{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    display: grid;
+    padding-top: 80px;
+    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-position-x: -30rem, 50rem;
+    background-position-y: -5rem, 15rem;
+    background-size:60rem 30rem;
+    
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color:#ffff;
+    width: 350px;
+    border-radius: 12px;
+    height: 400px;
+
+}
+.bg-pattern{
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    width: 350px;
+    height:200px;
+}
+.profile-img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    border: 3px solid #ffff;
+}
+h1{
+    color:black;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    
+
+}
+.london{
+    margin-top: -35px;
+    color: hsl(0, 0%, 59%);
+    font-size: 18px;
+    font-weight: 400;
+
+
+}
+hr{
+    width: 350px;
+    opacity: 0.2;
+    
+}
+.facts{
+    display: flex;
+    flex-direction: space-between;
+    gap: 3rem;
+    margin-bottom: 20px;
+}
+.followers{
+display: flex;
+flex-direction: column;
+font-size: 12px;
+color:hsl(0, 0%, 59%); 
+}
+.likes{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    color:hsl(0, 0%, 59%);
+
+}
+.photos{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    color:hsl(0, 0%, 59%);
+}
+/* Mobile view */
+@media screen and (max-width: 768px){
+    body{
+        background-position-x: -10rem, 30rem;
+        background-position-y: -5rem, 15rem;
+        background-size:40rem 30rem;
+        max-width: 300px;
+        font-size: 12px;
+        
+    }
+    .container{
+        max-width: 300px;
+        height: 400px;
+    
+    .bg-pattern{
+        width: 300px;
+        height: 350px;
+    }
+    .profile-img{
+        width: 80px;
+        height: 80px;
+        margin-top: -40px;
+    }
+    h1{
+        font-size: 12px;
+    }
+    .london{
+        font-size: 10px;
+    }
+    hr{
+        width: 300px;
+    }
+    .facts{
+        gap: 0.5rem;
+        margin: 600px;
+    }
+    .followers{
+        font-size: 10x;
+    }
+    .likes{
+        font-size: 10px;
+        margin-bottom: 60px;
+    }
+    .photos{
+        font-size: 10px;
+    }
+}
+    }
